@@ -1,0 +1,315 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    min-height: 100vh;  /* needed to make sure body fills up window */
+    font-family: "font-family: helvetica", sans-serif;
+    width: 100%;
+    font-size: 1.7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/************************ Header Style ********************/
+/**********************************************************/
+/**********************************************************/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/******* logo and nav ***********/
+.logo-and-nav {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    display: flex;
+}
+#logoText {
+    color:#4e4eb4;
+    font-size: 1.8vw;
+    opacity: .9;
+    font-weight: 100;
+}
+
+#logoText span{
+    color: rgb(201, 82, 120);
+    font-weight: bold;
+    opacity: .99;
+}
+
+
+.logo {
+    margin-left: 10%;
+    flex: 5;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-right: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+nav p {
+    font-weight: 100;
+    opacity: .6;
+    margin: 2%;
+}
+
+/******* header titleBar ***********/
+
+.header__titleBar {
+    display: flex;
+    background-color: rgb(249, 172,120);
+}
+
+.corid_image_div {
+    flex: 1;
+    margin-left: 10%;
+}
+.header__titleBar img {
+    width: 100%;
+    height: 100%;
+}
+
+.titleBar__Text {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.artistName {
+    font-family: montserrat, sans-serif; 
+    font-weight: 600;
+    font-size: 5.73vw;; 
+    color: white;
+    margin-left: 7%;
+    
+    font-style: normal;
+}
+
+.artContentTitle {
+    font-family: montserrat, sans-serif; 
+    font-weight: 100;
+    font-size: 3.5vw;
+    margin-left: 7%;
+    color: white;
+    font-style: italic;
+    
+}
+
+/************************ Main Style **********************/
+/**********************************************************/
+/**********************************************************/
+
+main {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/******* content_1 style ***********/
+
+.content_1 {
+    display: flex;
+}
+
+.content1_skech_image_div {
+    display: block;
+    flex: 1;
+    width: 50vw;
+    order: 2;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.content1_skech_image_div img {
+    width: 100%;
+}
+
+.content_1_texts {
+    flex: 1;
+    margin-top: 4%;
+}
+
+
+#content1_text_p1 {
+    color: rgb(201, 82, 61);
+    hyphens: auto;
+    line-height: 1.4;
+    word-wrap: break-word;
+    font-size: 2.1vw;
+    font-weight: 700;
+    height: auto;
+}
+
+
+#content1_text_p2 {
+    color: rgb(201, 82, 61);
+    hyphens: auto;
+    line-height: 1.4;
+    word-wrap: break-word;
+    margin-top: .7%;
+    font-weight: 100;
+    font-size: 2.1vw;
+    margin-bottom: 2.7%;
+}
+
+hr {
+    margin-bottom: 7%;
+}
+
+.contet1_text_p {
+    font-size: 1.4vw;
+    margin-bottom: 3%;
+}
+
+.Read_more_hide {
+    display: none;
+}
+
+.ReadMore {
+    margin-top: 8%;
+    font-size: 1.2vw;
+    color: rgb(201, 82, 61);
+    text-decoration-line: underline;
+}
+
+#down_icon {
+    margin-left: 2%;
+}
+
+
+/******* content_2 style ***********/
+
+.content_2 {
+    display: none;
+}
+
+.content_2_shown {
+    display: flex;
+}
+
+.tablet_GreenCoridor_img_div {
+    display: none;
+}
+
+.GreenCoridor_img_div {
+    flex:1;
+    order: 1;
+}
+
+.GreenCoridor_img_div img {
+    width: 100%;
+}
+
+.content2_text_div {
+    flex: 2;
+    order: 2;
+}
+
+.content2_text_div p {
+    margin: 5%;
+    margin-bottom: 1%;
+    font-size: 1.4vw;
+}
+
+.content2_text_div a {
+    font-size: 1.2vw;
+    margin-left: 5%;
+    color: rgb(201, 82, 61);
+    margin-bottom: 7%;
+}
+
+#up_icon {
+    margin-left: 2%;
+}
+
+/************************ footer Style ********************/
+/**********************************************************/
+/**********************************************************/
+
+.footer_show {
+    display: flex;
+}
+
+.footer_hide {
+    display: none;
+}
+
+footer {
+    background-color: rgb(249, 172,120);
+    color: rgb(201, 82, 61);
+    font-size: 1.5vw;
+    margin-top: 4%;
+    padding-bottom: 3%;
+}
+
+footer p {
+    opacity: .8;
+}
+
+.adress_text_div {
+    flex: 1;
+    margin-top: 3%;
+    margin-left: 10%;
+    
+}
+
+#footer_addres_name {
+    font-weight: 700;
+    margin-bottom: 8%;
+}
+
+
+.hours_text_div {
+    flex: 2;
+    margin-left: 2%;
+    margin-top: 3%;
+    margin-right: 10%;
+}
+
+#footer_hours {
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
