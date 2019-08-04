@@ -15,7 +15,7 @@
         padding-right: 5%;
     }
     
-    .corid_image_div {
+    .my_image {
         margin: 0;
     }
       
@@ -31,93 +31,7 @@
     /************************ Main Style ********************/
     /**********************************************************/
     
-     /************************ contetn 1 Style ********************/
-    
-    .content_1 {
-        display: block;
-    
-    }
-    
-    .content1_skech_image_div {
-        display: block;
-        float: right;
-        flex: none;
-        margin-bottom: 4%;
-        width: 40vw;
-    }
-    
-    hr {
-        margin-bottom: 4%;
-    }
-    
-    .contet1_text_p {
-        
-        font-size: 2.4vw;
-    }
-    
-    #content1_text_p2 {
-        font-size: 2.5vw;
-    }
-    
-    #content1_text_p1 {
-        font-size: 2.5vw;
-    }
-    
-    .ReadMore {
-        margin-bottom: 5%;
-        font-size: 2.2vw;
-    }
-    
-    /************************ contetn 2 Style ********************/
-    
-        /******* content_2 style ***********/
-
-.content_2 {
-    display: none;
-}
-
-.content_2_shown {
-    display: block;
-}
-    
-.tablet_GreenCoridor_img_div {
-    display: block;
-    width: 40%;
-    float: left;
-    margin-right: 2.9%;
-}
-    
-.tablet_GreenCoridor_img_div img {
-    width: 100%;
-}
-    
-.GreenCoridor_img_div {
-   display: none;
-}
-
-.GreenCoridor_img_div img {
-    
-}
-
-.content2_text_div {
-   
-}
-
-
-.content2_text_div p {
-    margin: 0;
-    margin-top: 5%;
-    margin-bottom: 4%;
-    font-size: 2.4vw;
-}
-
-
-.content2_text_div a {
-    margin-top: 10px;
-    margin-left: 0;
-    color: rgb(201, 82, 61);
-    font-size: 2.4vw;
-}
+     
     
     
      /************************ footer Style ********************/
@@ -142,7 +56,7 @@
 @media only screen and (max-width: 480px) {
     
     body {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     
     /************************ Header Style ********************/
@@ -182,8 +96,8 @@
         background-image: linear-gradient(rgb(102, 255, 102),rgb(51, 204, 204) )
     }
     
-    .corid_image_div {
-        margin: 0;
+    .my_image {
+        margin: 10%;
     }
     
     .titleBar__Text {
@@ -208,91 +122,6 @@
     /**********************************************************/
     
     
-     /************************ contetn 1 Style ********************/
-     .content_1 {
-        display: flex;
-         padding-bottom: 10%;
-        flex-direction: column;
-    
-    }
-    
-    .content1_skech_image_div {
-        display: none;
-        float: right;
-        flex: none;
-        width: 85vw;
-        margin-left: -6%;
-    }
-    
-    hr {
-        margin-bottom: 4%;
-    }
-    
-    .contet1_text_p {
-        
-        font-size: 4.4vw;
-    }
-    
-    #content1_text_p2 {
-        font-size: 5.5vw;
-    }
-    
-    #content1_text_p1 {
-        font-size: 5.6vw;
-    }
-    
-    .ReadMore {
-        font-size: 5.2vw;
-        margin-bottom: 5%;
-    }
-    /******* content_2 style ***********/
-
-.content_2_shown {
-    display: flex;
-    flex-direction: column;
-}
-.content_2 {
-    display: none;  
-}
-
-.tablet_GreenCoridor_img_div {
-    display: none;
-}
-
-.GreenCoridor_img_div {
-    display: block;
-    flex:1;
-    order: 2;
-    margin-top: 8%;
-    margin-left: -6%;
-    margin-right: -6%;
-    margin-bottom: 5%;
-}
-
-.GreenCoridor_img_div img {
-    width: 100%;
-}
-
-    .p2_content2 {
-        padding-bottom: 5%;
-    }
-.content2_text_div {
-    flex: 2;
-    order: 1;
-}
-
-.content2_text_div p {
-    margin: 5%;
-    margin-bottom: 1%;
-    font-size: 4.4vw;
-}
-
-.content2_text_div a {
-    color: rgb(201, 82, 61);
-    font-size: 5.2vw;
-    margin-left: 5%;
-    margin-bottom: 7%;
-}
     
     /************************ footer Style ********************/
     /**********************************************************/
