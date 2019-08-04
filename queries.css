@@ -179,6 +179,7 @@
     }
     .header__titleBar {
         flex-direction: column;
+        background-image: linear-gradient(rgb(102, 255, 102),rgb(51, 204, 204) )
     }
     
     .corid_image_div {
@@ -198,7 +199,7 @@
     
     .artContentTitle {
         margin: 0;
-        font-size: 6.5vw;
+        font-size: 5.5vw;
     }
     
     

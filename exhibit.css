@@ -58,7 +58,7 @@ nav {
 }
 
 nav p {
-    font-weight: 100;
+    font-weight: 800;
     opacity: .6;
     margin: 2%;
 }
@@ -67,13 +67,20 @@ nav p {
 
 .header__titleBar {
     display: flex;
-    background-color: rgb(249, 172,120);
+    /*background-color:rgb(51, 204, 204);
+*/
+    background-image: linear-gradient(to right, rgb(102, 255, 102),rgb(51, 204, 204) )
 }
 
 .corid_image_div {
     flex: 1;
     margin-left: 10%;
 }
+
+.me {
+    border-radius: 200px;
+}
+
 .header__titleBar img {
     width: 100%;
     height: 100%;
@@ -99,8 +106,8 @@ nav p {
 
 .artContentTitle {
     font-family: montserrat, sans-serif; 
-    font-weight: 100;
-    font-size: 3.5vw;
+    font-weight: 400;
+    font-size: 2.5vw;
     margin-left: 7%;
     color: white;
     font-style: italic;
@@ -241,17 +248,13 @@ hr {
 /**********************************************************/
 /**********************************************************/
 
-.footer_show {
+.footer_hide {
     display: flex;
 }
 
-.footer_hide {
-    display: none;
-}
-
 footer {
-    background-color: rgb(249, 172,120);
-    color: rgb(201, 82, 61);
+    background-image: linear-gradient(to right, rgb(102, 255, 102),rgb(51, 204, 204) );
+    color: black;
     font-size: 1.5vw;
     margin-top: 4%;
     padding-bottom: 3%;
