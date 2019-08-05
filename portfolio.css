@@ -31,14 +31,14 @@ header {
 #logoText {
     color:rgb(51, 204, 204);
     font-size: 1.8vw;
-    opacity: .9;
+    /* opacity: .9; */
     font-weight: bold;
 }
 
 #logoText span{
     color: rgb(201, 82, 120);
     font-weight: bold;
-    opacity: .99;
+    /* opacity: .99; */
 }
 
 
@@ -115,7 +115,7 @@ header {
 
     .menu__link:hover:before, .menu__link:hover:after{
         width: 100%;
-        transition-duration: .15s;
+        transition-duration: .25s;
     }
 }
   
@@ -160,7 +160,7 @@ nav p {
 }
 
 .me {
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .header__titleBar img {
@@ -206,6 +206,19 @@ main {
     flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ff00ff, #6600cc);
+    border-radius: 100%;
+}
+
+.block_title {
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
 }
 
 /************************ footer Style ********************/
