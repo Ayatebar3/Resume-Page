@@ -269,7 +269,7 @@ ul {
 
 .search_instruct {
     color: rgb(26, 150, 150);
-    font-size: 70%;
+    font-size: 1.3vw;
 }
 
 button { 
@@ -338,7 +338,7 @@ button {
 /**********************************************************/
 
 .footer_hide {
-    display: flex;
+    display: grid;
 }
 
 footer {
@@ -347,35 +347,17 @@ footer {
     font-size: 1.5vw;
     margin-top: 4%;
     padding-bottom: 3%;
+    text-align: center;
 }
 
-footer p {
-    opacity: .8;
+.contact{
+    margin-top: 2%;
+    margin-bottom: 10%;
 }
 
-.adress_text_div {
-    flex: 1;
-    margin-top: 3%;
-    margin-left: 10%;
-    
-}
-
-#footer_addres_name {
+#cont_text {
+    margin: 3%;
     font-weight: 700;
-    margin-bottom: 8%;
-}
-
-
-.hours_text_div {
-    flex: 2;
-    margin-left: 2%;
-    margin-top: 3%;
-    margin-right: 10%;
-}
-
-#footer_hours {
-    font-weight: 700;
-    margin-bottom: 4%;
 }
 
 
