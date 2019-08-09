@@ -11,7 +11,7 @@ function createCORSRequest(method, url) {
 
     let city_name = document.getElementById("search_city").value;
 
-    current = "http://api.openweathermap.org/data/2.5/weather?q=" + city_name + "&units=imperial&APPID=7e12480e71b58d897c1af4bf18361b1d";
+    current = "https://api.openweathermap.org/data/2.5/weather?q=" + city_name + "&units=imperial&APPID=7e12480e71b58d897c1af4bf18361b1d";
 
     let xhrCurr = createCORSRequest('GET', current);
   
