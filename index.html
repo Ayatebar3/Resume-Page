@@ -19,14 +19,14 @@
         
         <div class="logo-and-nav">
              <div class="logo">
-                <p id="logoText">Welcome to my <span>Portfolio Page </span></p>
+                <p id="logoText">Welcome to my<span> Portfolio Page</span></p>
             </div>
 
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__group"><a href="#0" class="menu__link">About</a></li>
-                    <li class="menu__group"><a href="#0" class="menu__link">Skills</a></li>
-                    <li class="menu__group"><a href="#0" class="menu__link">Contacts</a></li>
+                    <li id="about_menu" class="menu__group"><a href="#about" class="menu__link">About</a></li>
+                    <li id="skill_menu" class="menu__group"><a href="#skill" class="menu__link">Skills</a></li>
+                    <li class="menu__group"><a href="#footer" class="menu__link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,8 +46,8 @@
         </br>    
         </br>
         </br>  
-        <div class="container">
-            <div class="block">
+        <div class="container"id="about">
+            <div class="block" >
                 <div class="block_title">
                     <p class="b_title">ABOUT</p>
                 </div>
@@ -55,6 +55,9 @@
                 <div class="vertLine"> </div>
     
                 <div class="block_info">
+                    <div class="block_sub">
+                        <p class="b_sub">ABOUT</p>
+                    </div>
                     <div class="sub_block">
                         <div class="sub_title">
                             <p>Education</p>
@@ -97,8 +100,8 @@
 
         </br></br></br>
         
-        <div class="container">    
-            <div class="block">
+        <div class="container" id="skill">    
+            <div class="block" >
                 <div class="block_title">
                     <p class="b_title">SKILLS</p>
                 </div>
@@ -106,6 +109,9 @@
                 <div class="vertLine"> </div>
     
                 <div class="block_info">
+                    <div class="block_sub">
+                        <p class="b_sub">SKILLS</p>
+                    </div>
                     <div class="sub_block">
                         <div class="sub_title">
                             <p>Programming Languages</p>
@@ -129,25 +135,25 @@
                         <div class="sub_title">
                             <p>Weather Forecast API Call</p>
                         </div> 
-
+                        </br>
                         <div class="search_div">
+                            <div class="search_instruct">
+                                <p>Type in a city and the country (ex: Sacramento, United States)</p>
+                            </div>
                             <div class="text_input_div" >
-                                <input type="search" id="search_city" placeholder="Enter Zip Code" class="text_input_box">
+                                <input type="search" id="search_city" class="text_input_box">
                                 <button onclick="makeCorsRequest()">submit</button>
                             </div>
                         </div>
                         </br>
                         <div class="weather-stats_div">
-                            
                             <div class="curr_time_header_div">
-                                <p class="location"></p>
                                 <p id="current_time_id"></p>
                             </div>
                                     
                             <div class="curr_sky_status">
                                 <img src="assets/clearsky.svg" id="current_img_id" alt="default_sky_stats_img">
                             </div>
-                            <hr class="degree_text_header_hr">
                             <div class="degree_text_header">
                                 <p id="curr_temp_text_id"></p>
                             </div>                            
@@ -157,6 +163,8 @@
             </div>
         </div>        
     </main>
+
+    </br></br></br>
       
     <footer class="footer_hide" id="footer">
         <div class="adress_text_div">

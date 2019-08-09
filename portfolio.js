@@ -43,31 +43,33 @@ function createCORSRequest(method, url) {
       
     let temper = Math.round(currentWeather.main.temp); //current temperature
     let icon = currentWeather.weather[0].icon;
-    let bannerIcon = document.getElementsByClassName("curr_sky_status")[0];
-    let time = new Date();
-    var hours;
-    if(time.getHours() === 0){
-        hours = "12:00am"
-    }
-    else if(time.getHours() < 12){
-        hours = time.getHours().toString() + ":00am";
-    }
-    else if(time.getHours() === 12){
-        hours = "12:00pm"
-    }
-    else {
-      hours = (time.getHours()%12).toString() + ":00am";
-    }
+    let bannerIcon = document.getElementById("current_img_id");
+    let time = new Date((currentWeather.dt)*1000);
+    var hours = time.getHours();
+    var minutes = "0" + time.getMinutes();
+    var seconds = "0" + time.getSeconds();
+    let timer = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+    // if(time.getHours() === 0){
+    //     hours = "12:00am"
+    // }
+    // else if(time.getHours() < 12){
+    //     hours = time.getHours().toString() + ":00am";
+    // }
+    // else if(time.getHours() === 12){
+    //     hours = "12:00pm"
+    // }
+    // else {
+    //   hours = (time.getHours()%12).toString() + ":00am";
+    // }
 
-    document.getElementById("current_time_id").innerHTML = hours;
-    document.getElementById("curr_temp_text_id").innerHTML = temper;
+    document.getElementById("current_time_id").innerHTML = "Measured at <p>" + timer + " PST</p>";
+    document.getElementById("curr_temp_text_id").innerHTML = temper + "<span><sup>º</sup><i>F</i><span>";
     switch(icon) {
       case "01d":
           bannerIcon.src = 'assets/clearsky.svg';
           break;
       case "01n":
           bannerIcon.src = 'assets/clear-night.svg';
-          fixingMoonSizeFunction();
           break;
       case "02d":
           bannerIcon.src = 'assets/fewclouds-day.svg';
