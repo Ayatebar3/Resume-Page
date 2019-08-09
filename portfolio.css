@@ -201,26 +201,46 @@ nav p {
 /**********************************************************/
 
 main {
-    display: flex;
-    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;  
 }
 
+.container {
+    padding: 2%;
+    background-image: linear-gradient(to right,rgb(51, 204, 204) , rgb(102, 255, 102));
+    box-shadow: 10px 10px 8px #888888;
+}
+
 .block {
-    display: flex;
-    flex-direction: column;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 30% 10% 60%;
+    background-color: rgb(255, 255, 255);
 }
 
 .block_title {
-    font-size: 2.5vw;
+    grid-column: 1;
+    justify-self: center;
+    padding: 2%;
+    font-size: 2vw;
     color: rgb(201, 82, 120);
     font-weight: bold; 
 }
 
+.vertLine{
+    grid-column: 2;
+    border-left: 6px solid rgb(0, 204, 255);
+}
+
 .block_info {
-    color: rgb(32, 138, 138);
+    grid-column: 3;
+    color: rgb(201, 82, 120);
     font-weight: bold;
+}
+
+
+ul {
+    color: rgb(32, 138, 138);
 }
 
 
