@@ -155,8 +155,8 @@ nav p {
 .my_image {
     flex: 1;
     margin-left: 10%;
-    margin-top: 0.25%;
-    margin-bottom: 0.25%
+    margin-top: 0.5%;
+    margin-bottom: 0.5%
 }
 
 .me {
@@ -207,14 +207,14 @@ main {
 
 .container {
     padding: 2%;
-    background-image: linear-gradient(to right,rgb(51, 204, 204) , rgb(102, 255, 102));
-    box-shadow: 10px 10px 8px #888888;
+    background-image: linear-gradient(to right,rgb(51, 204, 204), rgb(102, 255, 102));
+    box-shadow: 15px 15px 12px #888888;
 }
 
 .block {
     justify-self: center;
     display: grid;
-    grid-template-columns: 30% 10% 60%;
+    grid-template-columns: 25% 5% 45% 25%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -225,22 +225,109 @@ main {
     font-size: 2vw;
     color: rgb(201, 82, 120);
     font-weight: bold; 
+    position: relative;
+}
+
+.b_title {
+    position: absolute;
+    top: 45%;
+    left: -300%;
 }
 
 .vertLine{
     grid-column: 2;
-    border-left: 6px solid rgb(0, 204, 255);
+    border-left: 6px solid rgb(0, 204, 153);
 }
 
 .block_info {
     grid-column: 3;
     color: rgb(201, 82, 120);
     font-weight: bold;
+    margin: 2%;
+    justify-content: center;
+}
+
+.sub_block {
+    padding: 5%;
 }
 
 
 ul {
     color: rgb(32, 138, 138);
+    position: relative;
+    left: 10%;
+    padding: 10px;
+}
+
+button { 
+    background-color: rgb(51, 204, 204);
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    letter-spacing: .5px;
+    line-height: 22.5px;
+    overflow: hidden;
+    outline: none;
+    padding: 0 16px;
+    position: relative;
+    text-align: center;
+}
+
+/***************************************************/
+/***************** Weather  Styles *****************/
+/***************************************************/
+
+.weather-stats_div {
+    display: flex;
+    font-family: cursive;
+}
+
+.curr_time_header_div {
+    margin-left: 6%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.curr_time_header_div p {
+    text-align: center;
+    font-size: 170%;
+    color: rgb(32, 138, 138);
+    letter-spacing: 1px;
+}
+
+.header_skyStatus_div_tablet {
+    display: none;
+}
+
+.header_skyStatus_div {
+    text-align: center;
+    width: 30%;
+}
+
+.header_skyStatus_div img{
+    width: 100%;
+}
+
+.degree_text_header{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-align: center;
+    margin-left: 5%;
+    padding-top: 2%;
+    font-size: 700%;
+    color: rgb(102, 255, 102);
+}
+
+.degree_text_header_hr {
+    display: none;
+}
+
+.current_p {
+    margin-bottom: 5%;
 }
 
 
