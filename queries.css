@@ -36,27 +36,23 @@
     /**********************************************************/
     
     .block_title {
-        font-size: 2.5vw;
+        font-size: 2.75vw;
         left: -5%;
     }
 
     .block_info {
-        font-size: 2vw;
+        font-size: 2.25vw;
     }
      
-    
+    .search_instruct {
+        font-size: 1.75vw;
+    }
     
      /************************ footer Style ********************/
     /**********************************************************/
     
-    .footer_show {
-        display: flex;
-        font-size: 2vw;
-    }
-
-    .footer_hide {
-        display: flex;
-        font-size: 2vw;
+    #footer {
+        font-size: 2.75vw;
     }
 }
 
@@ -139,7 +135,7 @@
     }
 
     .vertLine {
-        /* display: none; */
+        display: none;
     }
 
     .b_title {
@@ -159,6 +155,10 @@
         font-size: 4vw;
     }
 
+    .search_instruct {
+        color: rgb(26, 150, 150);
+        font-size: 3vw;
+    }
 
     /************************ footer Style ********************/
     /**********************************************************/
