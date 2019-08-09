@@ -14,6 +14,10 @@ body {
     flex-direction: column;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /************************ Header Style ********************/
 /**********************************************************/
 /**********************************************************/
@@ -23,6 +27,7 @@ header {
 }
 
 /******* logo and nav ***********/
+
 .logo-and-nav {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
@@ -142,7 +147,6 @@ nav p {
     opacity: .6;
     margin: 2%;
 }
-
 /******* header titleBar ***********/
 
 .header__titleBar {
@@ -214,7 +218,7 @@ main {
 .block {
     justify-self: center;
     display: grid;
-    grid-template-columns: 25% 5% 45% 25%;
+    grid-template-columns: 30% 10% 60%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -234,7 +238,7 @@ main {
     left: -300%;
 }
 
-.vertLine{
+.vertLine {
     grid-column: 2;
     border-left: 6px solid rgb(0, 204, 153);
 }
@@ -247,6 +251,10 @@ main {
     justify-content: center;
 }
 
+.block_sub {
+    display: none;
+}
+
 .sub_block {
     padding: 5%;
 }
@@ -257,6 +265,11 @@ ul {
     position: relative;
     left: 10%;
     padding: 10px;
+}
+
+.search_instruct {
+    color: rgb(26, 150, 150);
+    font-size: 70%;
 }
 
 button { 
@@ -280,7 +293,7 @@ button {
 /***************************************************/
 
 .weather-stats_div {
-    display: flex;
+    display: grid;
     font-family: cursive;
 }
 
@@ -300,17 +313,10 @@ button {
     letter-spacing: 1px;
 }
 
-.header_skyStatus_div_tablet {
-    display: none;
-}
-
-.header_skyStatus_div {
-    text-align: center;
-    width: 30%;
-}
-
-.header_skyStatus_div img{
-    width: 100%;
+.curr_sky_status {
+    width: 50%;
+    height: auto;
+    justify-self: center;
 }
 
 .degree_text_header{
@@ -318,16 +324,12 @@ button {
     text-align: center;
     margin-left: 5%;
     padding-top: 2%;
-    font-size: 700%;
+    font-size: 300%;
+    color: rgb(32, 138, 138)
+}
+
+#curr_temp_text_id span {
     color: rgb(102, 255, 102);
-}
-
-.degree_text_header_hr {
-    display: none;
-}
-
-.current_p {
-    margin-bottom: 5%;
 }
 
 

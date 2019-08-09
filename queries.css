@@ -10,6 +10,10 @@
     /************************ Header Style ********************/
     /**********************************************************/
     
+    #logoText {
+        font-size: 2.1vw;
+    }
+
     nav {
         font-size: 2.7vw;
         padding-right: 5%;
@@ -24,36 +28,42 @@
     }
     
     .artContentTitle {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     
     
     /************************ Main Style ********************/
     /**********************************************************/
     
+    .block_title {
+        font-size: 2.5vw;
+        left: -5%;
+    }
+
+    .block_info {
+        font-size: 2vw;
+    }
      
     
     
      /************************ footer Style ********************/
     /**********************************************************/
     
-.footer_show {
-    display: flex;
-    font-size: 2vw;
-}
+    .footer_show {
+        display: flex;
+        font-size: 2vw;
+    }
 
-.footer_hide {
-    display: flex;
-    font-size: 2vw;
+    .footer_hide {
+        display: flex;
+        font-size: 2vw;
+    }
 }
-    
-}
-
 
 /************************ Mobile Phone Style ********************/
 /****************************************************************/
 /****************************************************************/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     
     body {
         font-size: 2.5vw;
@@ -82,15 +92,17 @@
         order: 1;
         font-size: 5vw;
         margin: 0;
+        margin-left: -10%;
     }
     
     nav p {
         margin-top: 3%;
-        margin-left: 6%;
+        margin-left: 0%;
         margin-right: 3%;
         opacity: 0.7;
         font-weight: 100;
     }
+
     .header__titleBar {
         flex-direction: column;
         background-image: linear-gradient(rgb(102, 255, 102),rgb(51, 204, 204) )
@@ -122,8 +134,32 @@
     /************************ Main Style ********************/
     /**********************************************************/
     
-    
-    
+    .block {
+        display: block;
+    }
+
+    .vertLine {
+        /* display: none; */
+    }
+
+    .b_title {
+        font-size: 3vw;
+    }
+
+    .block_info {
+        font-size: 3.25vw;
+    }
+
+    .block_sub {
+        display: block;
+    }
+
+    .b_sub {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+
     /************************ footer Style ********************/
     /**********************************************************/
     
@@ -131,15 +167,9 @@
         display: flex;
         font-size: 5vw;
     }
-
-    .footer_hide {
-        display: none;
-    }
     
     footer {
-        
-        display: none;
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .hours_text_div {
