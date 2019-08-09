@@ -41,6 +41,7 @@
         </div>
     </header>
     <main>        
+        <script src="portfolio.js"></script>
 
         </br>    
         </br>
@@ -48,45 +49,113 @@
         <div class="container">
             <div class="block">
                 <div class="block_title">
-                    <p class="b_Title">ABOUT</p>
+                    <p class="b_title">ABOUT</p>
                 </div>
     
                 <div class="vertLine"> </div>
     
                 <div class="block_info">
-
                     <div class="sub_block">
-                        <p>Education</p>
-                    </div>
-
-                    <ul>
-                        <li>Computer Science B.S.</li>
-                        <li>University of California, Davis</li>
-                        <li>3.69 GPA</li>
-                    </ul>
+                        <div class="sub_title">
+                            <p>Education</p>
+                        </div>
+        
+                        <ul>
+                            <li>Computer Science B.S.</li>
+                            <li>University of California, Davis</li>
+                            <li>3.69 GPA</li>
+                        </ul>
+                    </div>    
                     
+                    <div class="sub_block">
+                        <div class="sub_title">
+                            <p>Interests</p>
+                        </div>
+        
+                        <ul>
+                            <li>Cloud Computing</li>
+                            <li>UX Design</li>
+                            <li>Big Data</li>
+                        </ul>
+                    </div>     
+                    
+                    <div class="sub_block">
+                        <div class="sub_title">
+                            <p>Experience With</p>
+                        </div>
+        
+                        <ul>
+                            <li>Web Development</li>
+                            <li>iOS Development</li>
+                            <li>Game Development</li>
+                            <li>Systems Programming</li>
+                        </ul>
+                    </div>            
                 </div>
             </div>
         </div>
 
-        </br>
+        </br></br></br>
         
         <div class="container">    
             <div class="block">
                 <div class="block_title">
-                    <p class="b_Title">SKILLS</p>
+                    <p class="b_title">SKILLS</p>
                 </div>
     
                 <div class="vertLine"> </div>
     
                 <div class="block_info">
-                    <p>Goodbye..</p>                
-                </div>
-            </div>
-        </div>
-
-              
+                    <div class="sub_block">
+                        <div class="sub_title">
+                            <p>Programming Languages</p>
+                        </div>
         
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>C</li>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>Go / GoLang</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>   
+                        
+                    <div class="sub_block">
+                        <div class="sub_title">
+                            <p>Weather Forecast API Call</p>
+                        </div> 
+
+                        <div class="search_div">
+                            <div class="text_input_div" >
+                                <input type="search" id="search_city" placeholder="Enter Zip Code" class="text_input_box">
+                                <button onclick="makeCorsRequest()">submit</button>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="weather-stats_div">
+                            
+                            <div class="curr_time_header_div">
+                                <p class="location"></p>
+                                <p id="current_time_id"></p>
+                            </div>
+                                    
+                            <div class="curr_sky_status">
+                                <img src="assets/clearsky.svg" id="current_img_id" alt="default_sky_stats_img">
+                            </div>
+                            <hr class="degree_text_header_hr">
+                            <div class="degree_text_header">
+                                <p id="curr_temp_text_id"></p>
+                            </div>                            
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div>        
     </main>
       
     <footer class="footer_hide" id="footer">
